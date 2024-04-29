@@ -1,0 +1,30 @@
+def addition(x,y):
+    return x+y
+
+def substraction(x,y):
+    return x-y
+
+def multiplication(x,y):
+    return x*y
+
+def division(x,y):
+    return x//y
+
+n1 = int(input("Enter first number : "))
+n2 = int(input("Enter second number : "))
+ch = input("Enter choice : ")
+
+if ch == '+':
+    sum = addition(n1,n2)
+    print(n1,"+",n2,"=",sum)
+elif ch == '-':
+    sub = substraction(n1,n2)
+    print(n1,"-",n2,"=",sub)
+elif ch == '*':
+    multi = multiplication(n1,n2)
+    print(n1,"*",n2,"=",multi)
+elif ch == "/":
+    div = division(n1,n2)
+    print(n1,"/",n2,"=",div)
+else:
+    print("Invalid choice : ")
